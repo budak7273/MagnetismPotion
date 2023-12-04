@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc43e4983a160e543856e5ba0421c9e1, type: 3}
+  m_Name: MagnetismPotion
+  m_EditorClassIdentifier: 
+  metadata:
+    guid: acdbee3f901e4b428e153fd7e15f0e80
+    name: MagnetismPotion
+    skipSafetyChecks: 0
+    accessesExtraAssemblies: 1
+    disableHarmonyPatching: 0
+    requiredOn: 3
+    files:
+    - path: Localization/Localization.csv
+    - path: Scripts/MagnetismPotionTweaks.cs
+    - path: Scripts/MagnetismPotionMod.cs
+    - path: Bundles/MagnetismPotion_Windows.assetbundle
+    - path: Bundles/MagnetismPotion_Linux.assetbundle
+    dependencies:
+    - modName: CoreLib
+      required: 1
+    - modName: CoreLib.Entity
+      required: 1
+  modPath: Assets\Mods\MagnetismPotion
