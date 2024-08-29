@@ -18,12 +18,20 @@ public static class MagnetismPotionTweaks
 
     private static void addBufferEntry(DynamicBuffer<CanCraftObjectsBuffer> canCraftBuffer, ObjectID itemId, int outputAmount)
     {
-        Debug.Log($"[{MagnetismPotionMod.NAME}]: Adding itemId {itemId} to crafter");
-        canCraftBuffer.Add(new CanCraftObjectsBuffer
+        CanCraftObjectsBuffer entry = new CanCraftObjectsBuffer
         {
             objectID = itemId,
             amount = outputAmount,
             entityAmountToConsume = 0
-        });
+        };
+        if (canCraftBuffer.Contains(entry))
+        {
+            Debug.Log($"[{MagnetismPotionMod.NAME}]: Crafter already contained itemId {itemId} so not adding it again");
+        }
+        else
+        {
+            canCraftBuffer.Add(entry);
+            Debug.Log($"[{MagnetismPotionMod.NAME}]: Adding itemId {itemId} to crafter");
+        }
     }
 }

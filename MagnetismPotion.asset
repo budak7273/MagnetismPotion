@@ -16,6 +16,7 @@ MonoBehaviour:
     guid: acdbee3f901e4b428e153fd7e15f0e80
     name: MagnetismPotion
     skipSafetyChecks: 0
+    disableScripts: 0
     accessesExtraAssemblies: 1
     disableHarmonyPatching: 0
     requiredOn: 3
